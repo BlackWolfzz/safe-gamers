@@ -1,0 +1,997 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: url('../Images/Wallpapers/bgwall1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*-------------global-style-rules-start------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+label,
+strong {
+    line-height: 2;
+    font-size: 0.85em;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+.badge {
+    padding: 9px 20px;
+    color: #eee;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.75em;
+    border-radius: 5px;
+}
+
+.badge.new {
+    background-color: #4EAE60;
+}
+
+.badge.strategy {
+    background-color: #4EAE60;
+}
+
+.badge.racing {
+    background-color: #694EAE;
+}
+
+.badge.rpg,
+.badge.adventure {
+    background-color: #40ABF5;
+}
+
+.badge.tournaments {
+    background-color: #27424e;
+}
+
+.badge.premium-tournament {
+    background-color: #5d8fcf;
+    color: #dfd7d7;
+}
+
+.shade {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(12, 12, 12, 0.7);
+    border-radius: 10px;
+}
+
+
+/*-------------global-style-rules-end------------*/
+
+
+/*-------------header-styles-start----------------*/
+
+header {
+    background: linear-gradient(to left, #24252A, #1c385c);
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #fdfdfd;
+}
+
+.hamburger-menu {
+    background-color: transparent;
+    border: 1px solid #2b95ec;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+    border-radius: 5px;
+}
+
+.hamburger-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: #eee;
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: #eee;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+    color: #0088a9;
+}
+
+#login-register-button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #eee;
+    font-size: 0.9em;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+#login-register-button:hover {
+    background-color: rgba(75, 177, 202, 0.8);
+    color: black;
+}
+
+
+/*-------------header-styles-end----------------*/
+
+
+/*----------------logo-styles-start--------------*/
+
+#hero-image {
+    background: url('../Images/Wallpapers/headwall2new1.2.1.png') top center no-repeat fixed;
+    height: 820px;
+}
+
+.hero-marketing-text {
+    max-width: 1200px;
+    margin: -30px auto 0;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+}
+
+.hero-marketing-text h1 {
+    color: #eee;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+.hero-marketing-text span {
+    color: #41c9eb;
+}
+
+.hero-marketing-text h5 {
+    color: #eee;
+    font-size: 0.85em;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 2;
+    margin-bottom: 2.5em;
+}
+
+.hero-marketing-text button {
+    background-color: #0088a9;
+    color: #eee;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.hero-marketing-text button:hover {
+    background-color: rgba(75, 177, 202, 0.8);
+    color: black;
+}
+
+
+/*----------------logo-styles-end--------------*/
+
+
+/*--------------latest-styles-start--------------*/
+
+#latest-news {
+    margin-bottom: 75px;
+}
+
+#latest-news .flex {
+    justify-content: flex-start;
+    max-width: 100%;
+    padding: 0;
+}
+
+#latest-news .flex h5 {
+    flex-basis: 15%;
+    background-color: #0088a9;
+    padding: 25px;
+    margin: 0;
+    text-align: right;
+    color: #eee;
+    font-size: 1.2em;
+}
+
+#latest-news-container {
+    background-color: #131313;
+    position: relative;
+    flex-basis: 85%;
+    padding: 25px;
+}
+
+#latest-news-container .badge {
+    margin-right: 20px;
+}
+
+#latest-news-container .latest-news-text {
+    color: #eee;
+}
+
+
+/*--------------latest-styles-end--------------*/
+
+
+/*---------popular-communities-styles-start---------*/
+
+#game-types-boxes {
+    margin-bottom: 75px;
+}
+
+#game-types-boxes h1 {
+    text-align: center;
+    color: #eee;
+}
+
+#game-types-boxes .box {
+    flex-basis: 25%;
+    position: relative;
+    height: 380px;
+    padding: 20px;
+    box-shadow: rgba(128, 92, 27, 0.25) 0px 25px 50px -12px;
+    transition: all 0.3s ease 0s;
+}
+
+#game-types-boxes .box:hover {
+    transform: translateY(20px);
+}
+
+#game-types-boxes .box.new {
+    background: url('../Images/cod-m-new2.jpg') top center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#game-types-boxes .box.strategy {
+    background: url('../Images/pubg-m.jpg') top center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#game-types-boxes .box.rpg {
+    background: url('../Images/gtav.jpg') top center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#game-types-boxes .box.racing {
+    background: url('../Images/assassin-s-creed-valhalla-standard-edition-i97796.jpg') top center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#game-types-boxes .box .badge {
+    position: relative;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+}
+
+#game-types-boxes .box .contents {
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    left: 0;
+    color: #eee;
+    padding: 0 35px 0 25px;
+}
+
+#game-types-boxes .box .contents a h4 {
+    font-size: 1.4em;
+    font-weight: 300;
+    color: #eee;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+#game-types-boxes .box .contents a h4:hover {
+    font-size: 1.7em;
+    font-weight: 300;
+    color: #2074ac;
+    text-decoration: none;
+}
+
+#game-types-boxes .box .contents p {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #eee;
+}
+
+
+/*---------popular-communities-styles-end---------*/
+
+
+/*----------------recent-polls-start----------------*/
+
+#recent-polls {
+    background: url('../Images/Wallpapers/midwall2.1 new.png');
+    background-color: #eef2f6;
+    border-top: 1px solid #d6dee7;
+    border-bottom: 1px solid #d6dee7;
+    padding: 70px 0 120px;
+}
+
+#recent-polls h1 {
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+
+#recent-polls p {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(233, 233, 233);
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+
+/*----------------recent-polls-end----------------*/
+
+
+/*-----------free-games-styles-start-----------*/
+
+#recent-games {
+    background: url('../Images/Wallpapers/midwall2 grpnew.png') top center no-repeat;
+    background-color: rgb(95, 79, 79);
+    border-top: 1px solid #d6dee7;
+    border-bottom: 1px solid #d6dee7;
+    padding: 70px 0 120px;
+}
+
+#recent-games h1 {
+    text-align: center;
+    color: #eee;
+}
+
+#recent-games .box {
+    position: relative;
+    flex-basis: 31%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#recent-games .box:hover {
+    transform: translateY(10px);
+}
+
+#recent-games .box .badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+#recent-games .box img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+#recent-games .box .box-lower-section {
+    padding: 20px;
+}
+
+#recent-games .box .box-lower-section p {
+    color: #999;
+}
+
+#recent-games .box .box-lower-section a {
+    color: black;
+    font-size: 1.2em;
+    transition: all 0.3s ease 0s;
+}
+
+#recent-games .box .box-lower-section a:hover {
+    color: #eee;
+    background-color: #4a5d75;
+    padding: 7px 15px;
+    border-radius: 10px;
+}
+
+
+/*-----------free-games-styles-end-----------*/
+
+
+/*----------tournaments-styles-start-----------*/
+
+#tournaments {
+    background: url('../Images/loop-img1.jpg') 0 0 repeat fixed;
+    padding: 125px 0 105px;
+}
+
+#tournaments .flex {
+    position: relative;
+}
+
+#tournaments .badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#tournaments .badge.tournaments {
+    top: -42px;
+    left: 15px;
+}
+
+#tournaments .box {
+    background: linear-gradient(to left, #24252A, #09121d);
+    padding: 70px 20px 40px;
+    flex-basis: 45%;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all 0.3s ease 0s;
+}
+
+#tournaments .box:hover {
+    transform: translateY(10px);
+}
+
+#tournaments .box .tournaments-image {
+    float: left;
+    width: 30%;
+}
+
+#tournaments .box .tournaments-image img {
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#tournaments .box .tournaments-content {
+    float: left;
+    margin-left: 25px;
+    width: 60%;
+}
+
+#tournaments .box .tournaments-content h3 {
+    color: #75d2e9;
+    margin-top: 0;
+}
+
+#tournaments .box .tournaments-content h3:hover {
+    color: #7f8a8d;
+}
+
+#tournaments .box .tournaments-content label {
+    color: #999;
+    font-size: 0.75em;
+}
+
+#tournaments .box .tournaments-content label.prizes {
+    color: #75d2e9;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+#tournaments .box .tournaments-content strong {
+    color: #eee;
+    font-size: 0.75em;
+}
+
+
+/*----------tournaments-styles-end-----------*/
+
+
+/*-----------top-rated-styles-start-----------*/
+
+#recent-reviews {
+    background: url('../Images/Wallpapers/before-footer3.png') top right no-repeat fixed;
+    background-size: cover;
+    padding: 75px 0 50px;
+}
+
+#recent-reviews h1 {
+    text-align: center;
+    margin-bottom: 1.65em;
+    color: #eee;
+}
+
+#recent-reviews .box {
+    flex-basis: 23%;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: all 0.3s ease 0s;
+}
+
+#recent-reviews .box:hover {
+    transform: translateY(-10px);
+}
+
+#recent-reviews .box .rating-badge {
+    border-radius: 28px;
+    padding: 13px;
+    font-size: 1.1em;
+    color: #eee;
+    font-weight: 600;
+    background-color: #d49f35;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+}
+
+#recent-reviews .box .rating-badge.purple {
+    background-color: #3941b4;
+}
+
+#recent-reviews .box .rating-badge.green {
+    background-color: #4EAE60;
+}
+
+#recent-reviews .box .rating-badge.violet {
+    background-color: #ff2020;
+}
+
+#recent-reviews .box .recent-reviews-image {
+    margin-bottom: 0.75em;
+    overflow: hidden;
+}
+
+#recent-reviews .box .recent-reviews-image img {
+    width: 100%;
+}
+
+#recent-reviews .box h4 {
+    color: white;
+}
+
+#recent-reviews .box p {
+    color: rgb(219, 219, 219);
+}
+
+
+/*-----------top-rated-styles-end-----------*/
+
+
+/*------------about-styles-start-------------*/
+
+#posts-comments {
+    background: url('../Images/loop-img1.jpg') 0 0 repeat fixed;
+    padding: 75px 0;
+}
+
+#posts-comments .game-warrior {
+    flex-basis: 32%;
+    position: relative;
+}
+
+#posts-comments .game-warrior p {
+    color: #eee;
+    font-weight: 600;
+}
+
+#posts-comments .game-warrior img {
+    margin-bottom: 0.5em;
+}
+
+#posts-comments .game-warrior img.footer-graphic {
+    position: absolute;
+    margin-bottom: 0;
+    width: 115%;
+}
+
+#posts-comments .posts-comments-box {
+    flex-basis: 28%;
+    background-color: #252525;
+    padding: 20px 20px 25px;
+    border: 1px solid #4a4a4a;
+    border-radius: 15px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+#posts-comments .posts-comments-box h3 {
+    color: #eee;
+}
+
+.post-item {
+    margin-top: 25px;
+}
+
+.post-item:first-child {
+    margin-top: 0;
+}
+
+.post-item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.post-item img {
+    float: left;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.post-item>div {
+    float: left;
+    margin-left: 5%;
+    width: 65%;
+}
+
+.post-item>div h5 {
+    color: #40ABF5;
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+.post-item>div p {
+    color: #eee;
+    margin: 5px 0;
+    font-size: 0.8em;
+}
+
+.post-item>div small {
+    color: #999;
+    font-size: 0.75em;
+}
+
+.comments-item {
+    margin-top: 1em;
+}
+
+.comments-item:first-child {
+    margin-top: 0;
+}
+
+.comments-item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.comments-item img {
+    width: 23%;
+    height: auto;
+    border-radius: 50%;
+    float: left;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.comments-item>div {
+    float: left;
+    margin-left: 7%;
+    width: 70%;
+}
+
+.comments-item>div p {
+    color: #eee;
+    font-size: 0.8em;
+    margin: 0 0 5px;
+}
+
+.comments-item>div p span {
+    color: #999;
+}
+
+.comments-item>div p span.author {
+    color: #e97b21;
+}
+
+.comments-item>div h5 {
+    color: #40ABF5;
+    font-size: 0.8em;
+    margin-top: 0;
+}
+
+
+/*------------about-styles-end-------------*/
+
+
+/*---------footer-styles-start---------*/
+
+footer {
+    background-color: #252525;
+    padding: 25px 0 20px;
+}
+
+footer small {
+    color: #ddd;
+    font-size: 0.9em;
+}
+
+footer small .footer-heart {
+    font-size: 16px;
+}
+
+footer small a {
+    color: #007BDC;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+footer ul li a {
+    color: #ddd;
+    font-size: 0.8em;
+}
+
+
+/*---------footer-styles-start---------*/
+
+
+/*-----------media-queries-start-----------*/
+
+@media (max-width: 1200px) {
+    .flex {
+        max-width: 1000px;
+    }
+    .latest-news-item {
+        font-size: 0.8em;
+    }
+    #tournaments .box .tournaments-content {
+        margin-left: 15px;
+    }
+    #tournaments .box .tournaments-content h3 {
+        font-size: 1.4em;
+        margin-bottom: 0.2em;
+    }
+}
+
+@media (max-width: 991px) {
+    .flex {
+        max-width: 720px;
+    }
+    nav ul li {
+        margin: 0 12px;
+        font-size: 0.85em;
+    }
+    #latest-news .flex h5 {
+        width: 15%;
+    }
+    #game-types-boxes .flex {
+        flex-wrap: wrap;
+    }
+    #game-types-boxes .box {
+        flex-basis: 50%;
+    }
+    #tournaments .box {
+        flex-basis: 42%;
+    }
+    #tournaments .box .tournaments-image {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+        height: 250px;
+        overflow: hidden;
+    }
+    #tournaments .box .tournaments-content {
+        margin-left: 0;
+        width: 100%;
+    }
+    #recent-reviews {
+        background: none;
+    }
+    #recent-reviews .flex {
+        flex-wrap: wrap;
+    }
+    #recent-reviews .box {
+        flex-basis: 48%;
+        margin-bottom: 45px;
+    }
+    #posts-comments .flex {
+        flex-wrap: wrap;
+    }
+    #posts-comments .game-warrior {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+    #posts-comments .posts-comments-box {
+        flex-basis: 43%;
+    }
+    #posts-comments .game-warrior img.footer-graphic {
+        display: none;
+    }
+    footer .flex {
+        flex-wrap: wrap-reverse;
+    }
+    footer small {
+        flex-basis: 100%;
+        font-size: 0.75em;
+        text-align: center;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+    footer ul {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+
+/*-------------991px-end--------------*/
+
+@media (max-width: 767px) {
+    h4 {
+        font-size: 1.2em;
+    }
+    .flex {
+        max-width: 540px;
+    }
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 101%;
+        width: 100%;
+        background-color: #131313;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+    nav ul li {
+        display: block;
+        padding: 15px 0 15px 20px;
+        border-bottom: 1px solid #2b95ec;
+        margin: 0;
+    }
+    nav ul li a {
+        font-size: 1em;
+    }
+    .hamburger-menu {
+        display: block;
+        margin-top: 2px;
+    }
+    #hero-image {
+        height: 650px;
+        background-size: cover;
+    }
+    .hero-marketing-text {
+        margin-top: -85px;
+    }
+    .hero-marketing-text h1 {
+        font-size: 2.5em;
+    }
+    #latest-news .flex h5 {
+        display: none;
+    }
+    #latest-news-container {
+        flex-basis: 100%;
+    }
+    #recent-games {
+        padding: 60px 0;
+    }
+    #game-types-boxes .box,
+    #recent-games .box {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    #recent-games .flex,
+    #tournaments .flex {
+        flex-wrap: wrap;
+    }
+    #tournaments .box {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    #tournaments .box .tournaments-image {
+        height: 400px;
+    }
+    #recent-reviews .box {
+        flex-basis: 100%;
+    }
+    #recent-reviews .box .recent-reviews-image {
+        height: 400px;
+    }
+    #posts-comments .posts-comments-box {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+    footer ul li {
+        margin: 0 10px;
+    }
+    footer ul li a {
+        font-size: 0.75em;
+    }
+}
+
+
+/*------------------767px-end------------------*/
+
+@media (max-width: 400px) {
+    .logo img {
+        width: 150px;
+        margin-top: 2px;
+    }
+    #login-register-button {
+        padding: 10px;
+        font-size: 0.65em;
+    }
+    #tournaments .box .tournaments-image {
+        height: 220px;
+    }
+}
+
+
+/*---------------media-queries-end-----------------*/
