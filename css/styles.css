@@ -5,7 +5,7 @@ html{
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background: url('../Images/Wallpapers/bgwall1.png');
+    /*background: url('../Images/Wallpapers/bgwall1.png');*/
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -284,8 +284,12 @@ nav ul li a:hover {
 
 /*---------popular-communities-styles-start---------*/
 
+
 #game-types-boxes {
     margin-bottom: 75px;
+    background: url('../Images/Wallpapers/bgwall1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #game-types-boxes h1 {
@@ -797,7 +801,7 @@ footer ul li a {
 }
 
 
-/*---------footer-styles-start---------*/
+/*---------footer-styles-end---------*/
 
 
 /*-----------media-queries-start-----------*/
