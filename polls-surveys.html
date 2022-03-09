@@ -6,15 +6,18 @@
     <!------------------------------responsive-view----------------------------------->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!------------------------------css----------------------------------->
-    <!--link href="css/styles.css" rel="Stylesheet" type="text/css" />-->
+    <!-----------------------------------------css---------------------------------------------->
+    <link href="css/styles.css" rel="Stylesheet" type="text/css" /> 
+    <!-----------------------chat-bot-css---------------------------->
+    <link rel="stylesheet" href="css/chat.css"> 
+    <link rel="stylesheet" href="css/home.css"> 
+    <!-----------------------polling-css---------------------------->
     <link rel="stylesheet" href="css/pns.css">
-    <link rel="stylesheet" href="css/chat.css">
-    <link rel="stylesheet" href="css/home.css">
+    <!-----------------------bootstarp---------------------------->
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
 
     <!-------------------------------tab-icon-image----------------------------------->
-    <link rel="icon" href="Images/tab-logo.png" type="image/gif" sizes="25x20">
+    <link rel="icon" href="" type="image/gif" sizes="25x20">
 
     <!--------------------------------icons----------------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,10 +35,10 @@
 </head>
 
 <body>
-    <!------------------------------header----------------------------------->
+    <!------------------------------header------------------------------>
     <header>
         <div class="flex">
-            <!------------------------------logo----------------------------------->
+            <!------------------------------logo------------------------------>
             <div class="logo">
                 <a href="./index.html"><img src="Images/Logos/logo new 3.1.png" alt="Game Warrior Logo" /></a>
             </div>
@@ -49,91 +52,88 @@
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="https://safe-gamers.netlify.app/">Communities</a></li>
                     <li><a href="./polls-surveys.html">Polls|Surveys</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="./events.html">Events</a></li>
+                    <li><a href="./about.html">About</a></li>
                 </ul>
             </nav>
             <a href="https://safe-gamers.netlify.app/" id="login-register-button">Login | Register</a>
         </div>
     </header>
 
-<!----------------------------------------Chat-bot-------------------------------------------------->
+<!----------------------------------------polls-surveys------------------------------------------------->
 
     <main>
-        <section>
-            <div class="tabs">
-                <div class="tabs-header">
-                    <div class="active">
-                        <i class="fa-solid fa-square-poll-horizontal">Polls</i>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-square-question">Surveys</i>
-                    </div>
+        <section class="pns">
+            <ul class="tabs">
+                <li>Recent Polls</li>
+                <li>Recent Surveys</li>
+            </ul>
+    
+            <div class="container">
+                <div class="contents">
+                    <iframe width="620" height="645" src="https://strawpoll.com/embed/polls/7rnzGkLQagO" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="620" height="645" src="https://strawpoll.com/embed/polls/7rnzGkLQagO" frameborder="0" allowfullscreen></iframe>
                 </div>
-                <div class="tab-indicator"></div>
-                <div class="tab-body">
-                    <div class="active">
-                        <h2>Recent Polls</h2>
-                        <iframe width="620" height="672" src="https://strawpoll.com/embed/polls/7rnzGkLQagO" style="width: 100%; height: 672px;" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div>
-                        <h2>Recent Surveys</h2>
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeMCstR9RLWcC9Et9rV1bTYp02roAEfVM3KpvgBgaBBzpTOtg/viewform?embedded=true" width="640" height="6208" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                    </div>
+    
+                <div class="contents">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeMCstR9RLWcC9Et9rV1bTYp02roAEfVM3KpvgBgaBBzpTOtg/viewform?embedded=true" width="640" height="6208" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeMCstR9RLWcC9Et9rV1bTYp02roAEfVM3KpvgBgaBBzpTOtg/viewform?embedded=true" width="640" height="6208" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
             </div>
         </section>
+        
+        <script src="./Javascript/polls.js"></script>
     </main>
     
     
     <!----------------------------------------Chat-bot-------------------------------------------------->
     <div class="flex">
-    <div class="chat-bar-collapsible">
-        <button id="chat-button" type="button" class="collapsible">Chat with SG Bot!
-            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments"></i>
-        </button>
-
-        <div class="content">
-            <div class="full-chat-block">
-                <!-- Message Container -->
-                <div class="outer-container">
-                    <div class="chat-container">
-                        <!-- Messages -->
-                        <div id="chatbox">
-                            <h5 id="chat-timestamp"></h5>
-                            <p id="botStarterMessage" class="botText"><span>Hang in there...</span></p>
-                        </div>
-
-                        <!-- User input box -->
-                        <div class="chat-bar-input-block">
-                            <div id="userInput">
-                                <input id="textInput" class="input-box" type="text" name="msg"
-                                    placeholder="Tap 'Enter' to send a message">
+        <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible">Chat with SG Bot!
+                <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments"></i>
+            </button>
+    
+            <div class="content">
+                <div class="full-chat-block">
+                    <!-- Message Container -->
+                    <div class="outer-container">
+                        <div class="chat-container">
+                            <!-- Messages -->
+                            <div id="chatbox">
+                                <h5 id="chat-timestamp"></h5>
+                                <p id="botStarterMessage" class="botText"><span>Hang in there...</span></p>
+                            </div>
+    
+                            <!-- User input box -->
+                            <div class="chat-bar-input-block">
+                                <div id="userInput">
+                                    <input id="textInput" class="input-box" type="text" name="msg"
+                                        placeholder="Tap 'Enter' to send a message">
+                                    <p></p>
+                                </div>
+    
+                                <div class="chat-bar-icons">
+                                    <i id="chat-icon" style="color: rgb(64, 161, 240);" class="fa fa-fw fa-gamepad"
+                                        onclick="heartButton()"></i>
+                                    <i id="chat-icon" style="color: rgb(223, 223, 223);" class="fa fa-fw fa-send"
+                                        onclick="sendButton()"></i>
+                                </div>
+                            </div>
+    
+                            <div id="chat-bar-bottom">
                                 <p></p>
                             </div>
-
-                            <div class="chat-bar-icons">
-                                <i id="chat-icon" style="color: rgb(64, 161, 240);" class="fa fa-fw fa-gamepad"
-                                    onclick="heartButton()"></i>
-                                <i id="chat-icon" style="color: rgb(223, 223, 223);" class="fa fa-fw fa-send"
-                                    onclick="sendButton()"></i>
-                            </div>
+    
                         </div>
-
-                        <div id="chat-bar-bottom">
-                            <p></p>
-                        </div>
-
                     </div>
+    
                 </div>
-
             </div>
+    
         </div>
-
     </div>
-</div>
 
-    <!------------------------------footer------------------------------
+    <!------------------------------footer----------------------------
     <footer>
         <div class="flex">
             <small>Copyright &copy; 2022 All Rights Reserved | This platform is developed by <a href="https://www.linkedin.com/in/nimesh-fernando-8046011b2/" target="_blank">Nimesh Fernando</a>.</small>
@@ -159,8 +159,9 @@
                 </li>
             </ul>
         </div>
-    </footer> ----->
+    </footer>
 
+    -->
     <!--------------------------------------------JS--------------------------------------------------->
     <script>
         document.getElementById('nav-toggle').addEventListener('click', function() {
@@ -194,6 +195,7 @@
     </script>
 
     <script src="./Javascript/app.js"></script>
+    <script src="./Javascript/polls.js"></script>
       
 
 </body>

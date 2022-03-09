@@ -5,9 +5,6 @@ html{
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    /*background: url('../Images/Wallpapers/bgwall1.png');*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 /*-------------global-style-rules-start------------*/
