@@ -1,0 +1,188 @@
+/*-------------------------------about-start--------------------------------*/
+.about {
+    width: 100%;
+    padding: 78px 0px;
+}
+
+.about img {
+    height: auto;
+    width: 420px;
+    border-radius: 20px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: default;
+}
+
+.about-text h1 {
+    color: white;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about-text span {
+    color: #0095f9;
+}
+
+.about-text p {
+    color: rgba(204, 230, 255, 0.8);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    
+}
+
+.about-text button {
+    background: #0095f9;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease 0s;
+}
+
+.about-text button:hover {
+    background: transparent;
+    border: 2px solid #0095f9;
+    cursor: pointer;
+}
+
+.about-text i {
+    font-size: 20px;
+    color: rgb(240, 224, 224);
+    padding: 13px;
+}
+
+/*-------------------------------about-end--------------------------------*/
+
+
+/*-------------------------------services-start--------------------------------*/
+
+.services {
+    background: #101000;
+    width: 100%;
+    padding: 100px 0px;
+    cursor: default;
+}
+
+.titles h2 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.boxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.cards {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+.cards i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #0095f9;
+}
+
+.cards h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: rgba(204, 230, 255, 0.8);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.cards:hover {
+    transform: translateY(10px);
+}
+
+/*-------------------------------services-start--------------------------------*/
+
+
+/*-------------------------------contact-start--------------------------------*/
+
+
+.contact-me {
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: default;
+}
+
+.contact-me p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contact-me .button-two {
+    background: #0095f9;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease 0s;   
+}
+
+.contact-me .button-two:hover {
+    background: transparent;
+    border: 2px solid #0095f9;
+    cursor: pointer;
+}
+
+/*-------------------------------contact-end--------------------------------*/
