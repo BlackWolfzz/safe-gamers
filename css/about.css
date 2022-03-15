@@ -223,3 +223,71 @@
 
 
 /*-------------------------------events-card-end--------------------------------*/
+
+
+/*-------------------------------create-events-from-end---------------------------------*/
+
+
+form {
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 0px 50px 50px 0px;
+}
+
+form input {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+form .submit-event {
+    padding: 15px;
+    background: #0095f9;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+form .submit-event:hover {
+    background: transparent;
+    border: 0.5px solid #0095f9;
+    cursor: pointer;
+}
+
+form .clear-event {
+    padding: 15px;
+    background: rgb(113, 114, 113);
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+form .clear-event:hover {
+    background: transparent;
+    border: 0.5px solid rgb(113, 114, 113);
+    cursor: pointer;
+}
+
+/*-------------------------------create-events-form-end---------------------------------*/
