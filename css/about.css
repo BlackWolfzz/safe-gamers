@@ -119,6 +119,7 @@
     text-align: center;
     transition: all 0.3s ease 0s;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    cursor: default;
 }
 
 .cards i {
