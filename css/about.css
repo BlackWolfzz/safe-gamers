@@ -1,4 +1,5 @@
 /*-------------------------------about-start--------------------------------*/
+
 .about {
     width: 100%;
     padding: 78px 0px;
@@ -6,8 +7,8 @@
 
 .about img {
     height: auto;
-    width: 420px;
-    border-radius: 20px;
+    width: 90%;
+    flex: 40%;
 }
 
 .about-text {
@@ -20,7 +21,8 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    flex: 60%;
     cursor: default;
 }
 
@@ -116,6 +118,7 @@
     overflow: hidden;
     text-align: center;
     transition: all 0.3s ease 0s;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 .cards i {
@@ -143,7 +146,7 @@
     transform: translateY(10px);
 }
 
-/*-------------------------------services-start--------------------------------*/
+/*-------------------------------services-end--------------------------------*/
 
 
 /*-------------------------------contact-start--------------------------------*/
@@ -165,6 +168,7 @@
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .contact-me .button-two {
@@ -291,3 +295,47 @@ form .clear-event:hover {
 }
 
 /*-------------------------------create-events-form-end---------------------------------*/
+
+
+
+/*-----------------------------------Media-Queries-start-------------------------------------*/
+
+
+@media only screen and (max-width: 767px) {
+    .boxs img {
+        width: 90%;
+        background-size: cover;
+    }
+    .main {
+        flex-direction: column;
+        margin: 50px 0;
+    }
+    .about-text h1 {
+        font-size: 60px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+        width: 65%;
+    }
+
+    .services .titles {
+        flex-basis: 50%;
+        font-size: 60px;
+    }
+    .contact-me {
+        margin: 50px 0;
+    }
+    .contact-me p {
+        font-size: 20px;
+        width: 50%;
+    }
+
+    .form {
+        width: fit-content;
+    }
+}
+
+
+
+/*-------------------------------------Media-Queries-end-------------------------------------*/
