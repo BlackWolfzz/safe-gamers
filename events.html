@@ -36,7 +36,10 @@
 
     <script src="./Javascript/events.js"></script>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
     (function() {
         emailjs.init("YsKiYG6XjxUMk95UN");
@@ -62,13 +65,13 @@
                     </button>
                 <ul id="nav-menu-container">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="https://safegamers.netlify.app/" target="">Communities</a></li>
+                    <li><a href="https://safegamers.netlify.app/" target="_blank">Communities</a></li>
                     <li><a href="./polls-surveys.html">Polls|Surveys</a></li>
                     <li><a href="./events.html">Events</a></li>
                     <li><a href="./about.html">About</a></li>
                 </ul>
             </nav>
-            <a href="https://safegamers.netlify.app/" target="" id="login-register-button">Login | Register</a>
+            <a href="https://safegamers.netlify.app/" target="_blank" id="login-register-button">Login | Register</a>
         </div>
     </header>
 
@@ -126,11 +129,12 @@
             <div class="main">
                 <img src="./Images/eventimg.png" alt="Nimesh Fernando">
                 <div class="about-text">
+                    <div class="event-form">
                     <form>
 
-                        <input type="text" id="name" placeholder="Name" required>
-                        <input type="email" id="email" placeholder="Email" required>
-                        <input type="text" id="title" placeholder="Title (ex: PC Gamer Meet)" required>
+                        <input type="text" id="fromname" placeholder="Name" required>
+                        <input type="email" id="toemail" placeholder="Email" required>
+                        <input type="text" id="thetitle" placeholder="Title (ex: PC Gamer Meet)" required>
                         
                         <input type="date" id="date" name="date" required>
                         <input type="time" id="appt" name="appt" required>
@@ -139,10 +143,11 @@
                         
                         <input type="url" id="url" name="url" placeholder="URL (ex: zoom link or google location)" required>
                         
-                        <button onclick='sendMail()' class="submit-event" type="submit">Create Event</button>
+                        <button onclick='sendMail(); reset(); return false;' class="submit-event">Create Event</button>
                         <button class="clear-event" type="reset">Clear</button>
 
                     </form>
+                    </div>
                 </div>
             </div>
         </div>
