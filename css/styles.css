@@ -5,6 +5,7 @@ html{
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    cursor: default;
 }
 
 /*-------------global-style-rules-start------------*/
@@ -652,6 +653,7 @@ nav ul li a:hover {
 #posts-comments .game-warrior p {
     color: #eee;
     font-weight: 600;
+    cursor: default;
 }
 
 #posts-comments .game-warrior img {
@@ -666,7 +668,7 @@ nav ul li a:hover {
 
 #posts-comments .posts-comments-box {
     flex-basis: 28%;
-    background-color: #252525;
+    background-color: #0f0e0e;
     padding: 20px 20px 25px;
     border: 1px solid #4a4a4a;
     border-radius: 15px;
@@ -675,6 +677,7 @@ nav ul li a:hover {
 
 #posts-comments .posts-comments-box h3 {
     color: #eee;
+    cursor: default;
 }
 
 .post-item {
@@ -702,6 +705,7 @@ nav ul li a:hover {
     float: left;
     margin-left: 5%;
     width: 65%;
+    cursor: default;
 }
 
 .post-item>div h5 {
@@ -723,6 +727,7 @@ nav ul li a:hover {
 
 .comments-item {
     margin-top: 1em;
+    cursor: default;
 }
 
 .comments-item:first-child {
@@ -824,7 +829,7 @@ footer ul li a {
   height: 80px;
   width: 80px;
   background: #0095f9;
-  border: 3px solid #333;
+  border: 3px solid rgb(0, 0, 0);
   display: none;
   justify-content: center;
   align-items: center;

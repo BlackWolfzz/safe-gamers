@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Safe Gamers - Goals</title>
+    <title>Safe Gamers - Communities</title>
     <!------------------------------responsive-view----------------------------------->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/chat.css">
     <link rel="stylesheet" href="../css/home.css">
     
-    <link rel="stylesheet" href="../css/vision.css">
+    <link rel="stylesheet" href="../css/communities.css">
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 
@@ -49,13 +49,13 @@
                     </button>
                 <ul id="nav-menu-container">
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="../Sub pages/communities.html">Communities</a></li>
+                    <li><a href="#">Communities</a></li>
                     <li><a href="../polls-surveys.html">Polls|Surveys</a></li>
                     <li><a href="../events.html">Events</a></li>
                     <li><a href="../about.html">About</a></li>
                 </ul>
             </nav>
-            <a href="../Sub pages/communities.html" id="login-register-button">Sign In</a>
+            <!-- <a href="https://safegamers.netlify.app/" target="_blank" id="login-register-button">Login | Register</a> -->
         </div>
     </header>
 
@@ -64,80 +64,57 @@
 
     <!------------------------------blog-post---------------------------------->
         
-        <section id="blog">
+    <section id="blog">
 
-            <div class="blog-heading">
-                <span>My Goals</span>
-                <h3>Safe Gamers LK</h3>
-            </div>
+        <div class="blog-heading">
+            <span>Communities</span>
+            <h3>Safe Gamers LK</h3>
+        </div>
 
-            <!----------------blog-container------------------>
+        <!----------------blog-container------------------>
 
-            <div class="blog-container">
+        <div class="blog-container">
 
-                <!---------box-1-------->
+            <!---------box-1-------->
 
-                <div class="blog-box">
-                    <!------img----->
-                    
-                    <div class="blog-img">
-                        <img src="../Images/Vision/vision1.png" alt="Blog">
-                        <!-- <a href="https://storyset.com/data">Data illustrations by Storyset</a> -->
-                    </div>
-
-                    <!-----text----->
-
-                    <div class="blog-text">
-                        <span>Game Calmly</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-
-
+            <div class="blog-box">
+                <!------img----->
+                
+                <div class="blog-img">
+                    <img src="../Images/Vision/community-cover.png" alt="Blog">
                 </div>
 
-                <!---------box-2-------->
+                <!-----text----->
 
-                <div class="blog-box">
-                    <!------img----->
+                <div class="blog-text">
                     
-                    <div class="blog-img">
-                        <img src="../Images/Vision/vision2.png" alt="Blog">
-                        <!-- <a href="https://storyset.com/data">Data illustrations by Storyset</a> -->
-                    </div>
+                    <!-- <h2><strong>I agree to the <a class="tnc" href="https://www.termsandconditionsgenerator.com/live.php?token=YqjKoMwd0PQuGGnbZgGQPM81vbynJr8V">Terms and Conditions</h4></a></h2> -->
 
-                    <!-----text----->
-
-                    <div class="blog-text">
-                        <span>Game Calmly</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
+                        <label for="myCheck"><h2><strong>I agree to the <a class="tnc" href="https://www.termsandconditionsgenerator.com/live.php?token=YqjKoMwd0PQuGGnbZgGQPM81vbynJr8V" target="_blank">Terms and Conditions</h4></a></h2></label> <input type="checkbox" id="myCheck" onclick="myFunction()">
+                            
+                            <a href="https://safegamers.netlify.app" target="_blank"><button id="text" style="display:none">Continue</button></a>
 
 
+                            <script>
+                                function myFunction() {
+                                  var checkBox = document.getElementById("myCheck");
+                                  var text = document.getElementById("text");
+                                  if (checkBox.checked == true){
+                                    text.style.display = "block";
+                                  } else {
+                                     text.style.display = "none";
+                                  }
+                                }
+                                </script>
+                    
                 </div>
 
-                <!---------box-3-------->
 
-                <div class="blog-box">
-                    <!------img----->
-                    
-                    <div class="blog-img">
-                        <img src="../Images/Vision/vision3.png" alt="Blog">
-                        <!-- <a href="https://storyset.com/data">Data illustrations by Storyset</a> -->
-                    </div>
+            </div>  
 
-                    <!-----text----->
+        </div>
 
-                    <div class="blog-text">
-                        <span>Take a break</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
+    </section>
 
     <!------------------------------------------Scroll-up----------------------------------------------->
 
@@ -204,7 +181,7 @@
                 </li>
 
                 <li>
-                    <a href="../Sub pages/communities.html">Communities</a>
+                    <a href="#">Communities</a>
                 </li>
 
                 <li>
