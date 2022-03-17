@@ -419,6 +419,7 @@ nav ul li a:hover {
 #recent-games h1 {
     text-align: center;
     color: #eee;
+    cursor: default;
 }
 
 #recent-games h4 {
@@ -435,7 +436,7 @@ nav ul li a:hover {
     background-color: #191919;
     border-radius: 20px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    cursor: pointer;
+    cursor: default;
     transition: all 0.3s ease 0s;
 }
 
@@ -525,6 +526,7 @@ nav ul li a:hover {
 #tournaments .box .tournaments-image img {
     width: 100%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 8px;
 }
 
 #tournaments .box .tournaments-content {
@@ -580,7 +582,7 @@ nav ul li a:hover {
     flex-basis: 23%;
     position: relative;
     text-align: center;
-    cursor: pointer;
+    cursor: default;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     transition: all 0.3s ease 0s;
