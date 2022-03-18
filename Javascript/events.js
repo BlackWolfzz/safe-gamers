@@ -14,3 +14,43 @@ function sendMail(params) {
         console.log("success", res.status);
     })
 }
+
+function validate() {
+      
+    if( document.myForm.fromname.value == "" ) {
+       alert( "Please provide your name!" );
+       document.myForm.Name.focus() ;
+       return false;
+    }
+    if( document.myForm.toemail.value == "" ) {
+       alert( "Please provide your Email!" );
+       document.myForm.EMail.focus() ;
+       return false;
+    }
+    if( document.myForm.thetitle.value == "" ) {
+        alert( "Please provide your Event Title!" );
+        document.myForm.Name.focus() ;
+        return false;
+    }
+    if( document.myForm.e-type.value == "" ) {
+        alert( "Please provide your name!" );
+        document.myForm.Name.focus() ;
+        return false;
+    }
+    if( document.myForm.url.value == "" ) {
+        alert( "Please provide your name!" );
+        document.myForm.Name.focus() ;
+        return false;
+    }
+    
+    return( true );
+ }
+
+//  function checkOk(){
+//     if (validate() == true) {
+//         return sendMail();
+//     }
+//     else {
+//         return false;
+//     }
+// }

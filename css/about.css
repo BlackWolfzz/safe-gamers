@@ -54,6 +54,17 @@
     
 }
 
+.about-text a {
+    text-decoration:underline;
+    color: #0095f9;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+}
+
+.about-text a:hover {
+    color: rgb(243, 75, 75);
+}
+
 .about-text button {
     background: #0095f9;
     color: white;
