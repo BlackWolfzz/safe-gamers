@@ -1,7 +1,7 @@
 function sendMail(params) {
     var tempParams = {
         from_name: document.getElementById("fromname").value,
-        to_name: document.getElementById("toemail").value,
+        message_5: document.getElementById("toemail").value,
         message: document.getElementById("thetitle").value,
         message_1: document.getElementById("date").value,
         message_2: document.getElementById("appt").value,
