@@ -210,9 +210,7 @@ function getBotResponse(input) {
     //---------------------------tips-------------------------------//
 
     if ((input == "tip")) {
-        return "Define your gaming goals.";
-        return "Learn the roles and characters in your preferred games.";
-        return "Level up with a new gaming PC.";
+        return "Define your gaming goals., Learn the roles and characters in your preferred games., Level up with a new gaming PC.";
     }
 
 
