@@ -187,6 +187,33 @@ function getBotResponse(input) {
         return "I'm SG Bot.";
     }
 
+    //---------------------------joke-------------------------------//
+    if ((input == "joke")) {
+        return "The PC gamer was denied entry to a night club. It was EXCLUSIVE.";
+    } else if ((input == "jokes")) {
+        return "Mike Tyson hates people who play Playstation. It's may be because he's an Xboxer.";
+    } else if ((input == "Joke")) {
+        return "PC gamers can't use Uber. There are too many incompatible drivers.";
+    } else if ((input == "Jokes")) {
+        return "I asked a French man if he played video games. He said Wii.";
+    } else if ((input == "funny")) {
+        return "Gamers only like one type of fish - Cod.";
+    } else if ((input == "Funny")) {
+        return "I got a PS5 for Christmas. My neighbors haven't even noticed it's missing yet.";
+    } else if ((input == "tell joke")) {
+        return "Pirate gamers love to play games in ArrRGB";
+    } else if ((input == "tell jokes")) {
+        return "Gamers don't take hot showers. They like to take steamy ones.";
+    }
+
+
+    //---------------------------tips-------------------------------//
+
+    if ((input == "tip")) {
+        return "Define your gaming goals." , "Learn the roles and characters in your preferred games." , "Level up with a new gaming PC.";
+    }
+
+
     //-------------------------Greeting responses-----------------------//
     if ((input == "hello") || (input == "Hello") || (input == "HELLO")) {
         return "Hello there!";
