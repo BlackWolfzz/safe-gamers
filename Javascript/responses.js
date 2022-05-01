@@ -8,6 +8,27 @@ function getBotResponse(input) {
         return "rock";
     }
 
+    //------------------------how------------------------------//
+    if ((input == "how") || (input == "how this works") || (input == "How this works")) {
+        return "I am SG Bot. I help gamers. I can give Gaming tips, jokes and safety tips.";
+    }
+
+    
+    //------------------------about-games-----------------------------//
+    if ((input == "top rated games") || (input == "Top rated games") || (input == "top games") || (input == "Top games") || (input == "best games") || (input == "Best games")) {
+        return "Please copy and paste your option from the below list, <br> <b>• Top Rated Games <br> • Best New Games <br> • Upcoming Games </b>"
+    }
+
+    //------------------------game-lists------------------------------//
+    if ((input == "Top Rated Games")) {
+        return "Top Rated Games, <br><b>• GTA V (2013) - 9.5<br>• Last of Us (2013) - 9.7<br>• Mass Effect 3 (2012) - 9.1<br>• God of War (2018) - 9.6<br>• Red Dead Redemption 2 (2018) - 9.7</b>";
+    } else if ((input == "Best New Games")) {
+        return "Best New Games, <br><b>• LEGO Star Wars: The Skywalker Saga (2022)<br>• Elden Ring (2022)<br>• WWE 2K22 (2022)<br>• Distant Worlds 2 (2022)<br>• Shadow Warrior 3 (2022)</b>"
+    } else if ((input == "Upcoming Games")) {
+        return "Upcoming Games, <br><b>•Two Point Campus (09-08-2022)<br>• Redfall (September 2022)<br>• Forespoken (11-10-2022)<br>• Gotham Knights (25-10-2022)<br>• Hogwarts Legacy (2022)</b>"
+    }
+
+
     //------------------------Owner------------------------------//
     if ((input == "who is the owner") || (input == "Who is the owner") || (input == "who Is the owner") || (input == "who is The owner") || (input == "who is the Owner") ||
     (input == "Who Is the owner") || (input == "Who is The owner") || (input == "Who is the Owner") || (input == "who Is The owner") || (input == "who Is the Owner") || (input == "who is The Owner") ||
@@ -21,55 +42,59 @@ function getBotResponse(input) {
 
     //--------------------------games----------------------------//
     if ((input == "game") || (input == "Game") || (input == "GAME") || (input == "games") || (input == "Games") || (input == "GAMES")) {
-        return "PC | PlayStation | Mobile ?";
+        return "Please copy and paste your Platform from the below list, <br><b>• PC<br>• PlayStation<br>• Mobile</b>";
     } else if ((input == "gaming") || (input == "Gaming") || (input == "GAMING")) {
-        return "PC | PlayStation | Mobile ?";
+        return "Please copy and paste your Platform from the below list, <br><b>• PC<br>• PlayStation<br>• Mobile</b>";
     } 
 
-    //pc
+    //--------------------------pc-games---------------------------//
     if ((input == "pc") || (input == "Pc") || (input == "pC") || (input == "PC")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     } else if ((input == "pc game") || (input == "Pc game") || (input == "pC game") || (input == "PC game") || (input == "pc Game") ||
     (input == "Pc Game") || (input == "pC Game") || (input == "PC Game") || (input == "PC GAME")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     } else if ((input == "pcgame") || (input == "Pcgame") || (input == "pCgame") || (input == "PCgame") || (input == "pcGame") ||
     (input == "PcGame") || (input == "pCGame") || (input == "PCGame") || (input == "PCGAME")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     } else if ((input == "pc games") || (input == "Pc games") || (input == "pC games") || (input == "PC games") || (input == "pc Games") ||
     (input == "Pc Games") || (input == "pC Games") || (input == "PC Games") || (input == "PC GAMES")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     } else if ((input == "pcgames") || (input == "Pcgames") || (input == "pCgames") || (input == "PCgames") || (input == "pcGames") ||
     (input == "PcGames") || (input == "pCGames") || (input == "PCGames") || (input == "PCGAMES")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     } else if ((input == "pc gamer") || (input == "Pc gamer") || (input == "pC gamer") || (input == "PC gamer") || (input == "pc Gamer") ||
     (input == "Pc Gamer") || (input == "pC Gamer") || (input == "PC Gamer") || (input == "PC GAMER")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     } else if ((input == "pcgamer") || (input == "Pcgamer") || (input == "pCgamer") || (input == "PCgamer") || (input == "pcGamer") ||
     (input == "PcGamer") || (input == "pCGamer") || (input == "PCGamer") || (input == "PCGAMER")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     } else if ((input == "pc gamers") || (input == "Pc gamers") || (input == "pC gamers") || (input == "PC gamers") || (input == "pc Gamers") ||
     (input == "Pc Gamers") || (input == "pC Gamers") || (input == "PC Gamers") || (input == "PC GAMERS")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     } else if ((input == "pcgamers") || (input == "Pcgamers") || (input == "pCgamers") || (input == "PCgamers") || (input == "pcGamers") ||
     (input == "PcGamers") || (input == "pCGamers") || (input == "PCGamers") || (input == "PCGAMERS")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     } else if ((input == "computer") || (input == "Computer") || (input == "COMPUTER")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     } else if ((input == "computer game") || (input == "Computer game") || (input == "COMPUTER game")  || (input == "computer Game") ||
     (input == "Computer Game") || (input == "COMPUTER Game") || (input == "COMPUTER GAME")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     } else if ((input == "computer games") || (input == "Computer games") || (input == "COMPUTER games")  || (input == "computer Games") ||
     (input == "Computer Games") || (input == "COMPUTER Games") || (input == "COMPUTER GAMES")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     } else if ((input == "computer gamer") || (input == "Computer gamer") || (input == "COMPUTER gamer")  || (input == "computer Gamer") ||
     (input == "Computer Gamer") || (input == "COMPUTER Gamer") || (input == "COMPUTER GAMER")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     } else if ((input == "computer gamers") || (input == "Computer gamers") || (input == "COMPUTER gamers")  || (input == "computer Gamers") ||
     (input == "Computer Gamers") || (input == "COMPUTER Gamers") || (input == "COMPUTER GAMERS")) {
-        return "What is your PC Gaming related problem?";
+        return "Please copy and paste your Problem from the below list, <br><b>• PC Heating Issues<br>• PC FPS Issues<br>• PC Graphic Issues<br>• PC RAM Issues<br>• Health Issues<br>• Gaming Addiction Issues";
     }
 
-    //playstation
+    if ((input == "PC Heating Issues")){
+        return "Solutions for PC Heating Issues, <br> <b>• "
+    }
+
+    //--------------------------playstation----------------------------//
     if (( input == "play station") || (input == "Play station") || (input == "Play Station") || (input == "play Station") ||
     (input == "PLAY station") || (input == "PLAY Station") || (input == "play STATION") || (input == "Play STATION") || (input == "PLAY STATION")) {
         return "What is your PS Gaming related problem?";
@@ -135,7 +160,7 @@ function getBotResponse(input) {
         return "What is your PS Gaming related problem?";
     }
 
-    //xbox
+    //--------------------------xbox----------------------------//
     if ((input == "xbox") || (input == "Xbox") || (input == "xBox") || (input == "XBox") || (input == "XBOX")) {
         return "What is your XBox Gaming related problem?";
     } else if ((input == "x box") || (input == "X box") || (input == "x Box") || (input == "X Box") || (input == "X BOX")) {
@@ -147,7 +172,7 @@ function getBotResponse(input) {
     }  else if (input == "X Box") {
         return "What is your XBox Gaming related problem?";
     }
-    //nintendo
+    //--------------------------nintendo----------------------------//
     if (input == "nintendo") {
         return "What is your Nintendo Gaming related problem?";
     } else if (input == "Nintendo") {
@@ -166,7 +191,7 @@ function getBotResponse(input) {
         return "What is your Nintendo Gaming related problem?";
     }
 
-    //mobile
+    //--------------------------mobile----------------------------//
     if ((input == "mobile") || (input == "Mobile") || (input == "MOBILE")) {
         return "What is your Mobile Gaming related problem?";
     } else if ((input == "phone") || (input == "Phone") || (input == "PHONE")) {
