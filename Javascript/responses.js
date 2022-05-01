@@ -209,14 +209,29 @@ function getBotResponse(input) {
 
     //---------------------------tips-------------------------------//
 
-    if ((input == "tip")) {
-        return "Define your gaming goals.";
-    } else if ((input == "tip")) {
-        return "Learn the roles and characters in your preferred games.";
-    } else if ((input == "tip")) {
-        return "Level up with a new gaming PC.";
-    }
+    if ((input == "tip") || (input == "Tip")) {
+        return "Gaming Tips <br> <b>• Define your gaming goals. <br> • Learn the roles and characters in your preferred games. <br> • Level up with a new gaming PC.</b>";
+     } else if ((input == "tips") || (input == "tips")) {
+         return "Gaming Tips <br> <b>• Connect socially with other gamers. <br> • Buy a proper gaming mouse and keyboard. <br> • Follow your favourite streamers.</b>";
+     } else if ((input == "gaming tip")) {
+         return " Gaming Tips <br> <b>• Upgrade your display. <br> • Buy a proper gaming mouse and keyboard. <br> • Cool your PC/ Playstation/ Mobile properly.</b>";
+     } else if ((input == "gaming tips")) {
+        return "Gaming Tips <br> <b>• Take care of your body and mind. <br> • Set up your space and take breaks. <br> • Connect socially with other gamers.</b>";
+     }
 
+    
+    //--------------------------saftey-tips-------------------------------//
+
+    if ((input == "safe") || (input == "Safe")) {
+        return "Safe Gaming Tips <br> <b>• Secure your computer. <br> • Create a good password. <br> • Stick to your username. </b>";
+    } else if ((input == "safe gaming")  || (input == "Safe gaming") || (input == "safe Gaming") || (input == "Safe Gaming")) {
+        return "Safe Gaming Tips <br> <b>• Protect your identity. <br> • Stand up to bullying. <br> • Report harassment.</b>";
+    } else if ((input == "safe gamer")  || (input == "Safe gamer") || (input == "safe Gamer") || (input == "Safe Gamer")) {
+        return "Safe Gaming Tips <br> <b>• Keep video and audio between friends. <br> • Keep your cool, remember: it's a game. <br> • Have fun playing games!</b>";
+    } else if ((input == "safe gamers")  || (input == "Safe gamers") || (input == "safe Gamers") || (input == "Safe Gamers")) {
+        return "Safe Gaming Tips <br> <b>• Take regular breaks while gaming. <br> • Only use trusted sources to find and download games. <br> • Do not addicted to games.</b>";
+    }
+    
 
     //-------------------------Greeting responses-----------------------//
     if ((input == "hello") || (input == "Hello") || (input == "HELLO")) {
@@ -225,7 +240,7 @@ function getBotResponse(input) {
         return "Hey there!";
     } else if ((input == "hi") || (input == "Hi") || (input == "HI")) {
         return "Hi there!";
-    } else if ((input == "ado") || (input == "Ado") || (input == "ADO")) {
+    } else if ((input == "ado") || (input == "Ado") || (input == "ADO")  || (input == "hola")  || (input == "Hola")) {
         return "Hello fellow Gamer!";
     } else if ((input == "goodbye") || (input == "Goodbye") || (input == "goodBye") || (input == "GoodBye") || (input == "GOODBYE") || (input == "good bye") || (input == "Good bye") ||
     (input == "good Bye") || (input == "Good Bye") || (input == "GOOD bye") || (input == "GOOD Bye") || (input == "good BYE") || (input == "Good BYE") || (input == "GOOD BYE")) {

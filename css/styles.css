@@ -565,7 +565,7 @@ nav ul li a:hover {
 /*----------tournaments-styles-end-----------*/
 
 
-/*-----------top-rated-styles-start-----------*/
+/*-----------upcoming-games-styles-start-----------*/
 
 #recent-reviews {
     background: url('../Images/Wallpapers/before-footer3.png') top right no-repeat fixed;
@@ -634,8 +634,13 @@ nav ul li a:hover {
     color: rgb(219, 219, 219);
 }
 
+#recent-reviews .box .u-date {
+    color: rgb(253, 65, 65);
+    font-size: 17px;
+}
 
-/*-----------top-rated-styles-end-----------*/
+
+/*-----------upcoming-games-styles-end-----------*/
 
 
 /*------------about-styles-start-------------*/
