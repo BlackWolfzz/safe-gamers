@@ -9,14 +9,14 @@ function getBotResponse(input) {
     }
 
     //------------------------how------------------------------//
-    if ((input == "how") || (input == "how this works") || (input == "How this works")) {
+    if ((input == "how") || (input == "how this works") || (input == "what now")) {
         return "I am SG Bot. I help gamers. I can give Gaming tips, jokes and safety tips.";
     }
 
     
     //------------------------about-games-----------------------------//
     if ((input == "top rated games") || (input == "Top rated games") || (input == "top games") || (input == "Top games") || (input == "best games") || (input == "Best games")) {
-        return "Please copy and paste your option from the below list, <br> <b>• Top Rated Games <br> • Best New Games <br> • Upcoming Games </b>"
+        return "Please copy and paste your option from the below list, <br><b>• Top Rated Games<br> • Best New Games<br> • Upcoming Games<br> • Best Multiplayer Games<br> • Best Singleplayer Games</b>"
     }
 
     //------------------------game-lists------------------------------//
@@ -25,11 +25,11 @@ function getBotResponse(input) {
     } else if ((input == "Best New Games")) {
         return "Best New Games, <br><b>• LEGO Star Wars: The Skywalker Saga (2022)<br>• Elden Ring (2022)<br>• WWE 2K22 (2022)<br>• Distant Worlds 2 (2022)<br>• Shadow Warrior 3 (2022)</b>"
     } else if ((input == "Upcoming Games")) {
-        return "Upcoming Games, <br><b>•Two Point Campus (09-08-2022)<br>• Redfall (September 2022)<br>• Forespoken (11-10-2022)<br>• Gotham Knights (25-10-2022)<br>• Hogwarts Legacy (2022)</b>"
-    } else if ((input == "Best Muliplayer Games")) {
-        return "Best Muliplayer Games, <br><b>•Minecraft (2011)<br>• Fortnite (2014)<br>• Among Us (2018)<br>• Valorant (2020)<br>• Apex Legends (2019)</b>"
+        return "Upcoming Games, <br><b>• Two Point Campus (09-08-2022)<br>• Redfall (September 2022)<br>• Forespoken (11-10-2022)<br>• Gotham Knights (25-10-2022)<br>• Hogwarts Legacy (2022)</b>"
+    } else if ((input == "Best Multiplayer Games")) {
+        return "Best Multiplayer Games, <br><b>• Minecraft (2011)<br>• Fortnite (2014)<br>• Among Us (2018)<br>• Valorant (2020)<br>• Apex Legends (2019)</b>"
     } else if ((input == "Best Singleplayer Games")) {
-        return "Best Singleplayer Games, <br><b>•The Witcher 3 (2015)<br>• God of War (2018)<br>• Red Dead Redemption 2 (2018)<br>• Metal Gear Solid V (2015)<br>• Spider-Man (2018)</b>"
+        return "Best Singleplayer Games, <br><b>• The Witcher 3 (2015)<br>• God of War (2018)<br>• Red Dead Redemption 2 (2018)<br>• Metal Gear Solid V (2015)<br>• Spider-Man (2018)</b>"
     }
 
 
@@ -37,16 +37,16 @@ function getBotResponse(input) {
     if ((input == "who is the owner") || (input == "Who is the owner") || (input == "who Is the owner") || (input == "who is The owner") || (input == "who is the Owner") ||
     (input == "Who Is the owner") || (input == "Who is The owner") || (input == "Who is the Owner") || (input == "who Is The owner") || (input == "who Is the Owner") || (input == "who is The Owner") ||
     (input == "Who Is The owner") || (input == "Who Is the Owner") || (input == "Who is The Owner") || (input == "who Is The Owner")  || (input == "Who Is The Owner")) {
-        return "Nimesh Fernando is the Owner & Developer of Safe Gamers.";
+        return "<b>Nimesh Fernando</b> is the Owner & Developer of Safe Gamers.";
     } else if ((input == "who owns") || (input == "Who owns") || (input == "Who Owns") || (input == "who Owns") || (input == "WHO OWNS")) {
-        return "Nimesh Fernando is the Owner & Developer of Safe Gamers.";
+        return "<b>Nimesh Fernando</b> is the Owner & Developer of Safe Gamers.";
     } else if ((input == "owner") || (input == "Owner") || (input == "OWNER")) {
-        return "Nimesh Fernando is the Owner & Developer of Safe Gamers.";
+        return "<b>Nimesh Fernando</b> is the Owner & Developer of Safe Gamers.";
     }
 
     //--------------------------games----------------------------//
     if ((input == "game") || (input == "Game") || (input == "GAME") || (input == "games") || (input == "Games") || (input == "GAMES")) {
-        return "Please copy and paste your Platform from the below list, <br><b>• PC<br>• PlayStation<br>• Mobile</b>";
+        return "Please copy and paste your Platform from the below list, <br><b>• PC<br>• PlayStation<br>• XBox<br>• Mobile</b>";
     } else if ((input == "gaming") || (input == "Gaming") || (input == "GAMING")) {
         return "Please copy and paste your Platform from the below list, <br><b>• PC<br>• PlayStation<br>• XBox<br>• Mobile</b>";
     } 
@@ -230,7 +230,7 @@ function getBotResponse(input) {
     //--------------------------mobile----------------------------//
     if ((input == "mobile") || (input == "Mobile") || (input == "MOBILE")) {
         return "Please copy and paste your Problem from the below list, <br><b>• Mobile Heating Issues<br>• Mobile FPS Issues<br>• Mobile Graphics Issues<br>• Mobile Storage Issues<br>• Health Issues<br>• Gaming Addiction Issues</b>";
-    } else if ((input == "phone") || (input == "Phone") || (input == "PHONE")) {
+    } else if ((input == "phone") || (input == "Phone") || (input == "PHONE") || (input == "smart phone") || (input == "smart phone")) {
         return "Please copy and paste your Problem from the below list, <br><b>• Mobile Heating Issues<br>• Mobile FPS Issues<br>• Mobile Graphics Issues<br>• Mobile Storage Issues<br>• Health Issues<br>• Gaming Addiction Issues</b>";
     } else if ((input == "mobile phone") || (input == "Mobile phone") || (input == "mobile Phone") || (input == "Mobile Phone") ||
     (input == "MOBILE phone") || (input == "MOBILE Phone") || (input == "mobile PHONE") || (input == "Mobile PHONE") || (input == "MOBILE PHONE")) {
