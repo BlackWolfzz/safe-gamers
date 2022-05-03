@@ -46,11 +46,11 @@ function validate() {
     return( true );
  }
 
-//  function checkOk(){
-//     if (validate() == true) {
-//         return sendMail();
-//     }
-//     else {
-//         return false;
-//     }
-// }
+ function checkOk(){
+    if (validate() == true) {
+        return sendMail();
+    }
+    else {
+        return false;
+    }
+}

@@ -15,7 +15,7 @@ function getBotResponse(input) {
 
     
     //------------------------about-games-----------------------------//
-    if ((input == "top rated games") || (input == "Top rated games") || (input == "top games") || (input == "Top games") || (input == "best games") || (input == "Best games")) {
+    if ((input == "top rated games") || (input == "Top rated games") || (input == "top games") || (input == "Top games") || (input == "best games") || (input == "Best games") || (input == "suggest games") || (input == "suggest Games") || (input == "Suggest games") || (input == "Suggest Games") || (input == "suggest game") || (input == "suggest Game") || (input == "Suggest game") || (input == "Suggest Game")) {
         return "Please copy and paste your option from the below list, <br><b>• Top Rated Games<br> • Best New Games<br> • Upcoming Games<br> • Best Multiplayer Games<br> • Best Singleplayer Games</b>"
     }
 
@@ -45,9 +45,9 @@ function getBotResponse(input) {
     }
 
     //--------------------------games----------------------------//
-    if ((input == "game") || (input == "Game") || (input == "GAME") || (input == "games") || (input == "Games") || (input == "GAMES")) {
+    if ((input == "game") || (input == "Game") || (input == "GAME") || (input == "games") || (input == "Games") || (input == "GAMES") || (input == "game platforms") || (input == "Game platforms") || (input == "game Platforms") || (input == "Game Platforms") || (input == "game platform") || (input == "Game platform") || (input == "game Platform") || (input == "Game Platform")) {
         return "Please copy and paste your Platform from the below list, <br><b>• PC<br>• PlayStation<br>• XBox<br>• Mobile</b>";
-    } else if ((input == "gaming") || (input == "Gaming") || (input == "GAMING")) {
+    } else if ((input == "gaming") || (input == "Gaming") || (input == "GAMING") || (input == "Gaming problem") || (input == "Gaming problems") || (input == "Gaming problem") || (input == "gaming problem") || (input == "Gaming Problem") || (input == "problem") || (input == "problems") || (input == "Trouble") || (input == "trouble")) {
         return "Please copy and paste your Platform from the below list, <br><b>• PC<br>• PlayStation<br>• XBox<br>• Mobile</b>";
     } 
 
@@ -295,7 +295,7 @@ function getBotResponse(input) {
 
     if ((input == "safe") || (input == "Safe")) {
         return "Safe Gaming Tips <br> <b>• Secure your computer. <br> • Create a good password. <br> • Stick to your username. </b>";
-    } else if ((input == "safe gaming")  || (input == "Safe gaming") || (input == "safe Gaming") || (input == "Safe Gaming")) {
+    } else if ((input == "safe gaming")  || (input == "Safe gaming") || (input == "safe Gaming") || (input == "Safe Gaming") || (input == "safe gaming tips")  || (input == "Safe gaming tips") || (input == "safe Gaming tips") || (input == "Safe Gaming tips") || (input == "safe gaming tip")  || (input == "Safe gaming tip") || (input == "safe Gaming tip") || (input == "Safe Gaming tip")) {
         return "Safe Gaming Tips <br> <b>• Protect your identity. <br> • Stand up to bullying. <br> • Report harassment.</b>";
     } else if ((input == "safe gamer")  || (input == "Safe gamer") || (input == "safe Gamer") || (input == "Safe Gamer")) {
         return "Safe Gaming Tips <br> <b>• Keep video and audio between friends. <br> • Keep your cool, remember: it's a game. <br> • Have fun playing games!</b>";
@@ -307,12 +307,14 @@ function getBotResponse(input) {
     //-------------------------Greeting responses-----------------------//
     if ((input == "hello") || (input == "Hello") || (input == "HELLO")) {
         return "Hello there!";
-    } else if ((input == "hey") || (input == "Hey") || (input == "HEY")) {
+    } else if ((input == "hey") || (input == "Hey") || (input == "HEY") || (input == "hey there") || (input == "Hey there") || (input == "hey There") || (input == "Hey There")) {
         return "Hey there!";
     } else if ((input == "hi") || (input == "Hi") || (input == "HI")) {
         return "Hi there!";
     } else if ((input == "ado") || (input == "Ado") || (input == "ADO")  || (input == "hola")  || (input == "Hola")) {
         return "Hello fellow Gamer!";
+    } else if ((input == "greetings") || (input == "Greetings") || (input == "GREETINGS")) {
+        return "Greetings! How can I assist?"
     } else if ((input == "goodbye") || (input == "Goodbye") || (input == "goodBye") || (input == "GoodBye") || (input == "GOODBYE") || (input == "good bye") || (input == "Good bye") ||
     (input == "good Bye") || (input == "Good Bye") || (input == "GOOD bye") || (input == "GOOD Bye") || (input == "good BYE") || (input == "Good BYE") || (input == "GOOD BYE")) {
         return "Good Bye fellow Gamer!";
@@ -328,6 +330,10 @@ function getBotResponse(input) {
         return "See you later!";
     } else if ((input == "stop") || (input == "Stop") || (input == "STOP")) {
         return "Good Bye then!";
+    } else if ((input == "thanks") || (input == "Thanks") || (input == "THANKS")) {
+        return "You're Welcome!";
+    } else if ((input == "thank") || (input == "thank you") || (input == "Thank you") || (input == "thank You") || (input == "Thank You") || (input == "THANK YOU")) {
+        return "Happy to help you!";
     } else {
         return "Try asking something else!";
     }
